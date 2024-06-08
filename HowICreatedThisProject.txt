@@ -1,0 +1,40 @@
+Created project Repo in git
+cloned in local
+Used the same folder that I cloned from git to create project 
+It showed a popup that the folder is not empty. Do you want to continue? YES
+Selected Sprint Boot DevTools, Lombok, Spring Configuration Support, Spring Web
+
+Created 'Configuration' package with annotation @Configuration to let Springboot know that this class should be configure on every build
+Created 'RestTemplate' class for calling 3rd party API.
+Annotated this class with @Bean to make this available in central directory for all classes which are using this.
+
+Created 'Model' package to have resources.
+Created two classes Category and Product.
+Added all necessary parameters in both classes and annotated with @Getter, @Setter, @AllArgsConstructor, @NoArgsConstructor
+
+Added all method signatures in 'ProductService' interface under 'Services' package
+
+Added a class 'FakeStoreService' which is called by controller to have business logic in calling 3rd party APIs.
+Annotated with @Service as this is service.
+This class implements the interface.
+Added constructor to initialize the rest template class as this service class is used to call 3rd party APIs.
+Implemented all methods that are related to interface.
+
+Added ProductDTO class to convert result into our desired format(Product class)
+Annotated with @Getter, @Setter, @AllArgsConstructor, @NoArgsConstructor.
+
+Added CategoryDTO class to convert result into our desired formatCategory class)
+Annotated with @Getter, @Setter, @AllArgsConstructor, @NoArgsConstructor.
+
+Created 'Controller' package and added 'ProductController' class.
+Annotated with @RestController to tell Springboot that this method contains methods that deal with APIs.
+Added constructor to initialize the interface that contains the methods as this class is used to call the implemented methods in service.
+Added all methods and annotated with @GetMapping, @PutMapping, @POSTMapping, @DeleteMapping respectively.
+
+Run the code and execute accordingly.
+
+
+
+
+ 
+
